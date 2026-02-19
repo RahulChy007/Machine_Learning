@@ -59,16 +59,7 @@ model = pickle.load(open('model.pkl', 'rb'))
 # -------------------------
 st.title("📩 Email / SMS Spam Classifier")
 
-st.success("""
-👨‍💻 Developed by **Team NeuroCraft**
 
-Members:
-• Rahul Kumar Choudhary  
-• Rishu Kumar Sah  
-• Rahul Raj  
-• Saurasish Purkait  
-• Tanishq Singh Gautam
-""")
 
 
 input_sms = st.text_area("Enter the message")
@@ -92,3 +83,17 @@ if st.button('Predict'):
             st.error("🚨 Spam Message")
         else:
             st.success("✅ Not Spam")
+
+
+st.markdown("""
+👨‍💻 Developed by **Team NeuroCraft**
+
+Members:
+            
+• Rahul Kumar Choudhary  
+• Rishu Kumar Sah  
+• Rahul Raj  
+• Saurasish Purkait  
+• Tanishq Singh Gautam
+""")
+st.markdown("---")
