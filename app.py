@@ -9,6 +9,8 @@ from nltk.stem.porter import PorterStemmer
 # Download required NLTK data (runs only if not already downloaded)
 # -------------------------
 nltk.download('punkt', quiet=True)
+nltk.download('punkt_tab')
+
 nltk.download('stopwords', quiet=True)
 
 # -------------------------
